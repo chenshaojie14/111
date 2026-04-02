@@ -1,0 +1,57 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="42" fill="#071022"/>
+  <g opacity="0.2">
+    <path d="M100 118H1100" stroke="#7EF2FF"/>
+    <path d="M100 310H1100" stroke="#7EF2FF"/>
+    <path d="M100 502H1100" stroke="#7EF2FF"/>
+    <path d="M100 694H1100" stroke="#7EF2FF"/>
+  </g>
+  <g opacity="0.32">
+    <path d="M214 90V770" stroke="#3EC5FF"/>
+    <path d="M600 90V770" stroke="#7EF2FF"/>
+    <path d="M986 90V770" stroke="#7BFFC8"/>
+  </g>
+  <g opacity="0.94">
+    <ellipse cx="600" cy="420" rx="284" ry="284" fill="url(#paint0_radial)"/>
+    <ellipse cx="600" cy="420" rx="256" ry="256" stroke="#7EF2FF" stroke-width="3"/>
+    <ellipse cx="600" cy="420" rx="196" ry="196" stroke="#3EC5FF" stroke-width="3"/>
+    <ellipse cx="600" cy="420" rx="136" ry="136" stroke="#7BFFC8" stroke-width="3"/>
+  </g>
+  <g opacity="0.95">
+    <rect x="358" y="314" width="484" height="36" rx="18" fill="#7EF2FF" fill-opacity="0.16" stroke="#7EF2FF" stroke-width="2"/>
+    <rect x="322" y="374" width="556" height="44" rx="22" fill="#3EC5FF" fill-opacity="0.14" stroke="#3EC5FF" stroke-width="2"/>
+    <rect x="294" y="444" width="612" height="52" rx="26" fill="#7BFFC8" fill-opacity="0.12" stroke="#7BFFC8" stroke-width="2"/>
+    <rect x="344" y="528" width="512" height="34" rx="17" fill="#7EF2FF" fill-opacity="0.12" stroke="#7EF2FF" stroke-width="2"/>
+  </g>
+  <g opacity="0.96">
+    <path d="M208 298H306L372 356" stroke="#7EF2FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M208 556H306L372 498" stroke="#7BFFC8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M830 356L896 298H994" stroke="#3EC5FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M830 500L896 556H994" stroke="#7EF2FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="196" cy="298" r="12" fill="#7EF2FF"/>
+    <circle cx="196" cy="556" r="12" fill="#7BFFC8"/>
+    <circle cx="1006" cy="298" r="12" fill="#3EC5FF"/>
+    <circle cx="1006" cy="556" r="12" fill="#7EF2FF"/>
+  </g>
+  <g opacity="0.92">
+    <path d="M140 176C214 136 284 118 352 118C450 118 528 146 596 208" stroke="#3EC5FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1060 176C986 136 916 118 848 118C750 118 672 146 604 208" stroke="#7EF2FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M140 684C214 724 284 742 352 742C450 742 528 714 596 652" stroke="#7BFFC8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1060 684C986 724 916 742 848 742C750 742 672 714 604 652" stroke="#7EF2FF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.98">
+    <circle cx="600" cy="420" r="44" fill="#7EF2FF" fill-opacity="0.18" stroke="#7EF2FF" stroke-width="4"/>
+    <circle cx="600" cy="420" r="18" fill="#7BFFC8"/>
+    <circle cx="470" cy="420" r="12" fill="#3EC5FF"/>
+    <circle cx="730" cy="420" r="12" fill="#3EC5FF"/>
+    <circle cx="600" cy="286" r="12" fill="#7EF2FF"/>
+    <circle cx="600" cy="554" r="12" fill="#7BFFC8"/>
+  </g>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 420) rotate(90) scale(284)">
+      <stop stop-color="#7EF2FF" stop-opacity="0.16"/>
+      <stop offset="0.58" stop-color="#3EC5FF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#071022" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

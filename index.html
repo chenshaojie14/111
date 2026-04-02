@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <meta id="meta-description" name="description" content="Personal portfolio website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Orbitron:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="circuit-canvas" aria-hidden="true"></canvas>
+  <div class="noise"></div>
+  <div class="scanline"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="aurora aurora-left" aria-hidden="true"></div>
+  <div class="aurora aurora-right" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="Back to top">
+        <span class="brand-chip">CSJ</span>
+        <span class="brand-text">
+          <strong data-text="brandName">Chen Shaojie</strong>
+          <small data-text="brandSub">Materials / Process / Data</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about" data-text="navAbout">About</a>
+        <a href="#focus" data-text="navFocus">Focus</a>
+        <a href="#experience" data-text="navExperience">Experience</a>
+        <a href="#skills" data-text="navSkills">Skills</a>
+        <a href="#contact" data-text="navContact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="hero">
+        <div class="hero-copy panel magnetic-panel" data-parallax>
+          <div class="hero-copy-inner">
+            <p class="section-kicker" data-text="heroKicker">Research / Process / Data</p>
+            <div class="hero-heading">
+              <span class="line-tag" data-text="heroTag">HUST</span>
+              <h1 class="glitch-title" data-html="heroTitle" data-glitch="1">Engineering insight</h1>
+            </div>
+            <p class="hero-text" data-text="heroText">Personal introduction.</p>
+
+            <div class="hero-pills" id="hero-pills"></div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#experience" data-text="heroPrimaryButton">View Experience</a>
+              <a class="button button-secondary" href="#contact" data-text="heroSecondaryButton">Contact Me</a>
+            </div>
+
+            <div class="hero-stats">
+              <article>
+                <strong>2026</strong>
+                <span data-text="statOneLabel">Expected Graduation</span>
+              </article>
+              <article>
+                <strong>81.84</strong>
+                <span data-text="statTwoLabel">Weighted Average</span>
+              </article>
+              <article>
+                <strong>50+</strong>
+                <span data-text="statThreeLabel">Structured Records</span>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-top">
+            <div class="portrait-shell panel magnetic-panel" data-parallax>
+              <div class="portrait-ring ring-one"></div>
+              <div class="portrait-ring ring-two"></div>
+              <div class="portrait-grid"></div>
+              <div class="portrait-frame">
+                <img id="portrait-image" src="portrait.jpg" alt="Portrait" loading="eager">
+              </div>
+              <div class="portrait-badge badge-top">PERSONAL SIGNAL</div>
+              <div class="portrait-badge badge-bottom">MATERIALS / PROCESS / DATA</div>
+            </div>
+
+            <div class="hero-terminal panel magnetic-panel">
+              <div class="terminal-head">
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <strong data-text="terminalTitle">System Feed</strong>
+              </div>
+              <div class="terminal-lines" id="terminal-lines"></div>
+            </div>
+          </div>
+
+          <div class="signal-panel panel magnetic-panel">
+            <div class="signal-header">
+              <p data-text="signalTitle">Current Status</p>
+              <span>OPEN TO INTERNSHIP</span>
+            </div>
+            <div class="signal-grid">
+              <div>
+                <span data-text="signalLabelOne">Current City</span>
+                <strong data-text="signalValueOne">Wuhan</strong>
+              </div>
+              <div>
+                <span data-text="signalLabelTwo">Hometown</span>
+                <strong data-text="signalValueTwo">Jiangxi</strong>
+              </div>
+              <div>
+                <span data-text="signalLabelThree">English</span>
+                <strong data-text="signalValueThree">CET-4 / CET-6</strong>
+              </div>
+              <div>
+                <span data-text="signalLabelFour">Internship</span>
+                <strong data-text="signalValueFour">3 Months+</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-diagram panel magnetic-panel">
+            <img id="signal-map-image" src="assets/signal-map.svg" alt="Signal map">
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker-section reveal">
+        <div class="ticker-panel panel">
+          <div class="ticker-track" id="ticker-track"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="section-heading">
+          <p class="section-kicker" data-text="aboutKicker">About Me</p>
+          <h2 data-text="aboutTitle">A clear personal overview</h2>
+        </div>
+
+        <div class="about-layout">
+          <article class="panel story-card magnetic-panel">
+            <p data-text="storyOne">Story one.</p>
+            <p data-text="storyTwo">Story two.</p>
+          </article>
+
+          <div class="about-side">
+            <div class="about-cards" id="value-cards"></div>
+            <article class="panel journey-card magnetic-panel">
+              <div class="journey-head">
+                <p class="mini-label" data-text="journeyKicker">Journey</p>
+                <h3 data-text="journeyTitle">Timeline</h3>
+              </div>
+              <div class="journey-grid" id="journey-grid"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="focus">
+        <div class="section-heading">
+          <p class="section-kicker" data-text="focusKicker">Research Focus</p>
+          <h2 data-text="focusTitle">What I am currently studying and refining</h2>
+        </div>
+
+        <div class="focus-layout">
+          <article class="panel focus-visual magnetic-panel" data-parallax>
+            <img id="research-core-image" src="assets/research-core.svg" alt="Research illustration">
+          </article>
+
+          <div class="focus-copy">
+            <article class="panel focus-story magnetic-panel">
+              <p data-text="focusIntro">Focus intro.</p>
+              <div class="focus-tags" id="focus-tags"></div>
+            </article>
+            <div class="focus-note-grid" id="focus-note-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker" data-text="experienceKicker">Experience</p>
+          <h2 data-text="experienceTitle">Selected Experience</h2>
+        </div>
+
+        <div class="experience-list" id="experience-list"></div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-heading">
+          <p class="section-kicker" data-text="skillsKicker">Skills</p>
+          <h2 data-text="skillsTitle">Capability Matrix</h2>
+        </div>
+
+        <div class="skills-layout">
+          <article class="panel stack-board magnetic-panel" id="stack-board"></article>
+
+          <div class="skills-side">
+            <div id="skills-side"></div>
+            <article class="panel stats-lab magnetic-panel">
+              <p class="mini-label" data-text="labKicker">Signal Board</p>
+              <h3 data-text="labTitle">How I usually work</h3>
+              <div class="lab-grid" id="lab-grid"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="contact panel magnetic-panel" data-parallax>
+          <div class="contact-copy">
+            <p class="section-kicker" data-text="contactKicker">Contact</p>
+            <h2 data-text="contactTitle">Get in touch</h2>
+            <p data-text="contactText">Contact copy.</p>
+            <div class="contact-tags" id="contact-tags"></div>
+          </div>
+
+          <div class="contact-links">
+            <a href="tel:18279364391">
+              <span data-text="contactPhoneLabel">Phone</span>
+              <strong>18279364391</strong>
+            </a>
+            <a href="mailto:2974536064@qq.com">
+              <span data-text="contactEmailLabel">Email</span>
+              <strong>2974536064@qq.com</strong>
+            </a>
+            <div class="contact-static">
+              <span data-text="contactLocationLabel">Location</span>
+              <strong data-text="contactLocationValue">Hongshan, Wuhan, Hubei</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
